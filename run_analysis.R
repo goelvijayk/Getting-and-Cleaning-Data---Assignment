@@ -61,4 +61,7 @@ for (i in 1:nrow(output))
                                           & prefin_data[,2]==output[i,2],3:68]
                               , na.rm = TRUE)
 }
+
+
+write.table(output, file = "output.txt")
 ############################
